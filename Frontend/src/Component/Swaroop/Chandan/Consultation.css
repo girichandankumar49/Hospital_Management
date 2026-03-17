@@ -1,0 +1,190 @@
+.hero{
+display:flex;
+justify-content:space-between;
+padding:60px;
+background:#0f5b9e;
+color:white;
+}
+
+.left{
+width:55%;
+}
+
+.left h1{
+font-size:35px;
+margin-bottom:20px;
+animation: slideLeft 1.2s ease;
+}
+
+@keyframes slideLeft{
+0%{
+opacity:0;
+transform:translateX(-80px);
+}
+100%{
+opacity:1;
+transform:translateX(0);
+}
+}
+
+.left p{
+line-height:1.6;
+color:white;
+animation: fadeUp 1.6s ease;
+}
+
+@keyframes fadeUp{
+0%{
+opacity:0;
+transform:translateY(40px);
+}
+100%{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.buttons{
+margin-top:20px;
+animation: fadeUp 2s ease;
+}
+.btn-orange{
+background:#ff8c2b;
+border:none;
+padding:15px 100px;
+color:white;
+font-size:16px;
+border-radius:8px;
+margin-right:10px;
+cursor:pointer;
+}
+
+.btn-gray{
+background:#ff8c2b;
+border:none;
+padding:15px 100px;
+color:#333;
+font-size:16px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.stats{
+display:flex;
+margin-top:40px;
+gap:20px;
+}
+
+.card{
+background:white;
+color:#333;
+padding:25px;
+border-radius:10px;
+width:150px;
+text-align:center;
+transition:all 0.3s ease;
+cursor:pointer;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card h2{
+color:#0f5b9e;
+margin:0;
+transition:0.3s;
+}
+
+.card:hover h2{
+color:#ff8c2b;
+}
+
+.card p{
+    font-size: 15px;
+    color: #333;
+}
+
+.form-box{
+background:white;
+color:#333;
+padding:15px 30px 20px 30px;
+border-radius:10px;
+width:380px;
+overflow:hidden;
+animation: formFade 1s ease;
+}
+
+@keyframes formFade{
+0%{
+opacity:0;
+transform:translateY(40px);
+}
+100%{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.form-box h2{
+background:#0f5b9e;
+color:white;
+padding:15px;
+margin-bottom: 12px;
+text-align:center;
+border-radius:10px;
+}
+
+.form-box input,
+.form-box select{
+padding:12px;
+margin-bottom:12px;
+border:1px solid #ccc;
+border-radius:6px;
+transition:all 0.3s ease;
+}
+.form-box input:focus,
+.form-box select:focus{
+border-color:#0f5b9e;
+box-shadow:0 0 8px rgba(15,91,158,0.3);
+outline:none;
+}
+.form-box input{
+   width:320px;
+}
+.form-box select{
+    width:320px;
+}
+
+.check{
+display:flex;
+gap:8px;
+font-size:14px;
+}
+.form-box input.box{
+    width: 10px;
+}
+.schedule{
+width:100%;
+background:#0f5b9e;
+color:white;
+padding:15px;
+border:none;
+border-radius:6px;
+margin-top:15px;
+font-size:16px;
+cursor:pointer;
+transition:all 0.3s ease;
+}
+
+.schedule:hover{
+background:#0b4b82;
+transform:scale(1.05);
+}
+.error{
+color:red;
+font-size:13px;
+display:block;
+margin-bottom:8px;
+}
