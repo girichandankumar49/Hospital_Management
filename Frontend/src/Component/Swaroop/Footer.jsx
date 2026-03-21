@@ -1,5 +1,5 @@
 import React from "react";
-
+import ecstasylogo from "../../images/ESC.jpg";
 function Footer() {
   return (
     <footer className="footer">
@@ -10,7 +10,7 @@ function Footer() {
         <div className="footer-col footer-about">
 
           <img
-            src="https://www.medicoverhospitals.in/images/logo-white.svg"
+            src={ecstasylogo}
             className="footer-logo"
             alt="Medicover logo"
           />

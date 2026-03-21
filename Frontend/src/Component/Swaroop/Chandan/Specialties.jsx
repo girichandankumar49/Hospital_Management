@@ -16,7 +16,7 @@ const Specialties = () => {
   if (!data) return <h2>No Data Found</h2>;
   return (
     <div>
-      <Consultation data={data}/>
+      <Consultation key={data.title1} data={data}/>
       <Oncology data={data}/>
       <Cancer data={data}/>
       <Technology data={data}/>

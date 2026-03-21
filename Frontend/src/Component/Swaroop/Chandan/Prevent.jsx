@@ -1,6 +1,28 @@
 import React from 'react'
+
 import "./Prevent.css"
 const Prevent = () => {
+    const image=[
+        {  id:1,
+            img:'https://cubaheal.com/wp-content/uploads/2019/09/Pediatric-check-up.jpg',
+            h3:'Master Health Checkup - Male',
+            location:'hyderbad',
+            package:'4000',
+          test:'heart'},
+        {    id:'2',
+            img:'https://pranaamhospitals.com/wp-content/uploads/2025/12/female.jpg',
+            h3:'Master Health Checkup-Female',
+              location:'Dehli',
+            package:'6000',
+          test:'Kindeny'},
+        {  id:'3',
+            img:'https://www.healthathomes.com/packages/images/executive-health-check-up.jpeg',
+            h3:'Executive Health Checkup',
+             location:'hyderbad',
+            package:'5000',
+          test:'stone'
+        }
+    ]
   return (
     <div>
        <div class="health-banner">
@@ -84,108 +106,17 @@ const Prevent = () => {
             {/* <!-- PACKAGES --> */}
 
             <div class="package-grid">
-
-                <div class="package-card">
-
-                    <img src="https://cubaheal.com/wp-content/uploads/2019/09/Pediatric-check-up.jpg"/>
-
+                   {image.map((item,index) => (
+                <div class="package-card" key={index}>
+                
+                    <img src={item.img}/>
+    
                     <div class="card-info">
-                        <h3>Master Health Checkup - Male</h3>
+                        <h3>{item.h3}</h3>
                         <button>View Details</button>
                     </div>
-
-                </div>
-
-
-                <div class="package-card">
-
-                    <img src="https://cubaheal.com/wp-content/uploads/2019/09/Pediatric-check-up.jpg"/>
-
-                    <div class="card-info">
-                        <h3>Master Health Checkup-Female</h3>
-                        <button>View Details</button>
-                    </div>
-
-                </div>
-
-
-                <div class="package-card">
-
-                    <img src="https://cubaheal.com/wp-content/uploads/2019/09/Pediatric-check-up.jpg"/>
-
-                    <div class="card-info">
-                        <h3>Executive Health Checkup</h3>
-                        <button>View Details</button>
-                    </div>
-
-                </div>
-
-                 <div class="package-card">
-
-                    <img src="https://cubaheal.com/wp-content/uploads/2019/09/Pediatric-check-up.jpg"/>
-
-                    <div class="card-info">
-                        <h3>Executive Health Checkup</h3>
-                        <button>View Details</button>
-                    </div>
-
-                </div>
-
-                 <div class="package-card">
-
-                    <img src="https://cubaheal.com/wp-content/uploads/2019/09/Pediatric-check-up.jpg"/>
-
-                    <div class="card-info">
-                        <h3>Executive Health Checkup</h3>
-                        <button>View Details</button>
-                    </div>
-
-                </div>
-
-                 <div class="package-card">
-
-                    <img src="https://cubaheal.com/wp-content/uploads/2019/09/Pediatric-check-up.jpg"/>
-
-                    <div class="card-info">
-                        <h3>Executive Health Checkup</h3>
-                        <button>View Details</button>
-                    </div>
-
-                </div>
-
-                <div class="package-card">
-
-                    <img src="https://cubaheal.com/wp-content/uploads/2019/09/Pediatric-check-up.jpg"/>
-
-                    <div class="card-info">
-                        <h3>Executive Health Checkup</h3>
-                        <button>View Details</button>
-                    </div>
-
-                </div>
-
-                <div class="package-card">
-
-                    <img src="https://cubaheal.com/wp-content/uploads/2019/09/Pediatric-check-up.jpg"/>
-
-                    <div class="card-info">
-                        <h3>Executive Health Checkup</h3>
-                        <button>View Details</button>
-                    </div>
-
-                </div>
-
-                <div class="package-card">
-
-                    <img src="https://cubaheal.com/wp-content/uploads/2019/09/Pediatric-check-up.jpg"/>
-
-                    <div class="card-info">
-                        <h3>Executive Health Checkup</h3>
-                        <button>View Details</button>
-                    </div>
-
-                </div>
-
+                </div> 
+                   ))}        
             </div>
 
         </div>

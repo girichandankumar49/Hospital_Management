@@ -18,22 +18,22 @@ const Excellence = ({data}) => {
                 <ul class="care-list">
 
                     <li>
-                        <span class="icon">✔</span>
+                        <span class="icon1">✔</span>
                         {data.list1}
                     </li>
 
                     <li>
-                        <span class="icon">✔</span>
+                        <span class="icon1">✔</span>
                         {data.list2}
                     </li>
 
                     <li>
-                        <span class="icon">✔</span>
+                        <span class="icon1">✔</span>
                         {data.list3}
                         </li>
 
                     <li>
-                        <span class="icon">✔</span>
+                        <span class="icon1">✔</span>
                         {data.list4}
                     </li>
 

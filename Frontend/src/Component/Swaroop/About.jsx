@@ -8,6 +8,8 @@ useEffect(() => {
 
 const handleScroll = () => {
 
+     if (!sectionRef.current) return;
+
 const pos = sectionRef.current.getBoundingClientRect().top;
 const screen = window.innerHeight;
 

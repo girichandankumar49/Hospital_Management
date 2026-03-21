@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Excellence() {
 
@@ -18,37 +19,37 @@ return (
 
 <div className="ex-card">
 <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" />
-Cardiology
+<Link to="/cardiology">Cardiology</Link> 
 </div>
 
 <div className="ex-card">
 <img src="https://cdn-icons-png.flaticon.com/512/2966/2966486.png" />
-Cardiothoracic
+<Link to="/cardiothoracic">Cardiothoracic</Link>
 </div>
 
 <div className="ex-card">
 <img src="https://cdn-icons-png.flaticon.com/512/3774/3774299.png" />
-Neuro Sciences
+<Link to="/Neurology">Neuro Sciences</Link>
 </div>
 
 <div className="ex-card">
 <img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png" />
-Gastroenterology
+<Link to="/Gastroenterology">Gastroenterology</Link>
 </div>
 
 <div className="ex-card">
 <img src="https://cdn-icons-png.flaticon.com/512/3209/3209265.png" />
-Nephrology
+<Link to="/Nephrology">Nephrology</Link>
 </div>
 
 <div className="ex-card">
 <img src="https://cdn-icons-png.flaticon.com/512/387/387569.png" />
-Oncology
+<Link to="/Oncology">Oncology</Link>
 </div>
 
 <div className="ex-card">
 <img src="https://cdn-icons-png.flaticon.com/512/3774/3774299.png" />
-Emergency & Critical Care
+<Link to="/Critical">Emergency & Critical Care</Link>
 </div>
 
 <div className="ex-card">
@@ -67,7 +68,7 @@ Organ Transplantation
 
 <div className="ex-card">
 <img src="https://cdn-icons-png.flaticon.com/512/387/387569.png" />
-Orthopedics
+<Link to="/Orthopedices">Orthopedices</Link>
 </div>
 
 <div className="ex-card">
@@ -77,7 +78,7 @@ Robotic Surgery
 
 <div className="ex-card">
 <img src="https://cdn-icons-png.flaticon.com/512/2966/2966486.png" />
-Obstetric & Gynecology
+<Link to="/Gynecology">Obstetric & Gynecology</Link>
 </div>
 
 </>
