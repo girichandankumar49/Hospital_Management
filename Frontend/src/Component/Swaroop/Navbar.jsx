@@ -2,7 +2,8 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Center from "./Chandan/Center";
 import ecstasylogo from "../../images/ESC.jpg";
-
+// import Doctor from "./Vidhya/Hospital";
+import Location from "./Vidhya/Location";
 function Navbar() {
 
   const [activeMenu, setActiveMenu] = useState(null);
@@ -36,8 +37,49 @@ function Navbar() {
 
       <ul className="nav-menu">
 
-        <li><Link to="/" className="nav-link">Find a Doctor</Link></li>
-        <li><Link to="/" className="nav-link">Find a Hospital</Link></li>
+       <li
+          className="dropdown"
+          onMouseEnter={() => setActiveMenu("Doctor1")}
+        // onMouseLeave={() => setActiveMenu(null)}
+        >
+          <span className="nav-link dropdown-toggle">
+            <Link to="/Doctor"> Find a Doctor</Link>
+            <span className={`arrow ${activeMenu === "Doctor1" ? "open" : ""}`}>
+              ▼
+            </span>
+          </span>
+
+          {activeMenu === "Doctor1" && (
+            <ul className="dropdown-menu">
+              <li><Link to="/Prevent" onClick={() => setActiveMenu(null)}>Cardiology</Link></li>
+              <li><Link to="/Diagnostic" onClick={() => setActiveMenu(null)}>Nephrology</Link></li>
+              <li><Link to="/Offer" onClick={() => setActiveMenu(null)}>Neurology</Link></li>
+              <li><Link to="/Healthcare" onClick={() => setActiveMenu(null)}>Gastroenterology</Link></li>
+            </ul>
+          )}
+        </li>
+
+        <li
+          className="dropdown"
+          onMouseEnter={() => setActiveMenu("Hospital")}
+        // onMouseLeave={() => setActiveMenu(null)}
+        >
+           <span className="nav-link dropdown-toggle">
+            <Link to="/Hospital">Find a Hospital</Link>
+            <span className={`arrow ${activeMenu === "Hospital" ? "open" : ""}`}>
+              ▼
+            </span>
+          </span>
+
+          {activeMenu === "Hospital" && (
+            <ul className="dropdown-menu">
+              <li><Link to="/Location" onClick={() => setActiveMenu(null)}>Hyderabad</Link></li>
+              <li><Link to="/Location" onClick={() => setActiveMenu(null)}>Telangana</Link></li>
+            </ul>
+          )}
+        </li>
+        {/* <li><Link to="/" className="nav-link">Find a Doctor</Link></li> */}
+        {/* <li><Link to="/" className="nav-link">Find a Hospital</Link></li> */}
 
 
 
@@ -94,7 +136,31 @@ function Navbar() {
             </ul>
           )}
         </li>
-        <li><Link to="/" className="nav-link">For Patients</Link></li>
+
+
+          <li
+          className="dropdown"
+          onMouseEnter={() => setActiveMenu("patient")}
+        // onMouseLeave={() => setActiveMenu(null)}
+        >
+          <span className="nav-link dropdown-toggle">
+            For Patients
+            <span className={`arrow ${activeMenu === "patient" ? "open" : ""}`}>
+              ▼
+            </span>
+          </span>
+
+          {activeMenu === "patient" && (
+            <ul className="dropdown-menu">
+              <li><Link to="/Diseases" onClick={() => setActiveMenu(null)}>Diseases</Link></li>
+              <li><Link to="/Symptoms" onClick={() => setActiveMenu(null)}>Symptoms</Link></li>
+              <li><Link to="/Testimonials" onClick={() => setActiveMenu(null)}>Patient Testimonials</Link></li>
+              <li><Link to="/Cost" onClick={() => setActiveMenu(null)}>Surgery Cost</Link></li>
+               <li><Link to="/Blogs" onClick={() => setActiveMenu(null)}>Blogs</Link></li>
+                <li><Link to="/Portal" onClick={() => setActiveMenu(null)}>Patient Portal</Link></li>
+            </ul>
+          )}
+        </li>
         <li><Link to="/" className="nav-link">About</Link></li>
         <li><Link to="/" className="nav-link">Home Care</Link></li>
 

@@ -66,7 +66,7 @@ const Consultation = ({ data }) => {
 
         {/* LEFT SIDE */}
         <div className="left">
-          <h1>{data.title1} Hospital in India</h1>
+          <h1 className="hii">{data.title1} Hospital in India</h1>
 
           <p>{data.para1}</p>
 
