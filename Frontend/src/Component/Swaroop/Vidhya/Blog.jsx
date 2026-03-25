@@ -1,10 +1,19 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "./Blog.css";
 
 const Blog = () => {
 
     const [index, setIndex] = useState(0);
-    
+    useEffect(() => {
+  const interval = setInterval(() => {
+    setIndex((prev) =>
+      prev < categories.length - 4 ? prev + 1 : 0
+    );
+  }, 2000);
+
+  return () => clearInterval(interval);
+}, []);
+
     const categories = [
   {
     name: "Cardiology",
@@ -110,19 +119,26 @@ const Blog = () => {
       </div>
 
       {/* CATEGORIES */}
-     <div className="categories-wrapper">
-  <div className="categories-container" id="categoriesContainer">
-
-    {categories.map((cat, index) => (
-      <div className="cat-card" key={index}>
+   <div className="categories-wrapper">
+  <div
+    className="categories-container"
+    style={{
+      transform: `translateX(-${index * 25}%)`
+    }}
+  >
+    {categories.map((cat, i) => (
+      <div className="cat-card" key={i}>
         <img src={cat.img} alt={cat.name} />
         <p>{cat.name}</p>
       </div>
     ))}
-
   </div>
 
-  <div className="dots" id="dots"></div>
+  {/* Buttons */}
+  <div style={{ textAlign: "center", marginTop: "10px" }}>
+    <button onClick={() => setIndex(index - 1)}>Prev</button>
+    <button onClick={() => setIndex(index + 1)}>Next</button>
+  </div>
 </div>
       {/* BLOGS */}
       <h2 className="section-title">Latest Blogs</h2>
