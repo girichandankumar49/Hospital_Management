@@ -4,6 +4,7 @@ justify-content:space-between;
 padding:60px;
 background:#0f5b9e;
 color:white;
+margin-top: 100px;
 }
 
 .left{
@@ -63,7 +64,7 @@ cursor:pointer;
 background:#ff8c2b;
 border:none;
 padding:15px 100px;
-color:#333;
+/* color:#333; */
 font-size:16px;
 border-radius:8px;
 cursor:pointer;
@@ -140,7 +141,7 @@ border-radius:10px;
 .form-box select{
 padding:12px;
 margin-bottom:12px;
-border:1px solid #ccc;
+border:1px solid #535151;
 border-radius:6px;
 transition:all 0.3s ease;
 }

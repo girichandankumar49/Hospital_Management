@@ -11,7 +11,7 @@ setLineLayout(true);
 
 return(
 
-<section className={`hero ${lineLayout ? "shrink" : ""}`}>
+<section className={`hero4 ${lineLayout ? "shrink" : ""}`}>
 
 <h1>Your Health Is Our Priority</h1>
 <p>Find the best doctors and hospitals near you</p>

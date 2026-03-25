@@ -460,8 +460,8 @@ const SpecialtiesData =[
 
     {
          id:5,
-        category:'Orthopedics',
-        title1:'Best Orthopedic',
+        category:'Orthopedices',
+        title1:'Best Orthopedices',
         para1:'At Medicover Hospital, we offer safe and advanced treatment for all kinds of bone, joint and spine problems. Whether you have joint pain, a sports injury or need a surgery like knee or hip replacement, our expert doctors are here to help. We use the latest technology, offer fast recovery and care for patients of all ages, from minor bone issues to complex bone surgeries.',
          surgeries:'1.5K+',
          title2:'Advanced Orthopedic Treatment & Procedures in India',
@@ -689,7 +689,695 @@ const SpecialtiesData =[
 
     
     {
+       id:7,
+        category:'Neurology',
+        title1:'Top Neurology',
+        para1:'Neurological health requires precision, expertise and timely treatment. At Medicover Hospital, we bring together some of the best neurologists in India, advanced neurodiagnostic facilities and a patient-friendly approach to treat disorders of the brain, spine and nervous system. From sudden emergencies like stroke to complex conditions such as Parkinson’s disease or epilepsy, we offer personalised treatments by using cutting-edge technology and support care for every patient.',
+         surgeries:'1.3K+',
+         title2:'Comprehensive Neurology Treatments and Procedures',
+         para2:'Medicover Hospital is known as a leading neurology hospital for providing complete neurological procedures to treat complex brain, spine and nerve conditions with precision and care. Whether you are looking for emergency conditions or a planned procedure, we deliver world-class neurological care at every step.',
+         box1:[
+            {
+                heading:'Craniotomy',
+                p1:'A surgical procedure to remove brain tumours, repair damaged tissue or treat bleeding inside the brain. Our neurosurgeons perform craniotomies with advanced navigation systems to ensure maximum safety and precision.',
+                 li1:'Enables precise removal of tumors or lesions',
+                 li2:'Reduces risk of damage to healthy brain tissue',
+                 li3:'Performed with intraoperative monitoring for accuracy',
 
+                p2:'Spine Surgery Treatment provides pulmonologists and critical care specialists who treat ventilator-associated pneumonia. Treatments include antibiotics, respiratory therapy, and monitoring to manage symptoms and prevent complications.' 
+            },
+            {
+                heading:'Awake Brain Surgery',
+                p1:'Performed while the patient is conscious, this procedure allows surgeons to monitor brain function in real-time, minimising the risk to areas that control speech, movement and other vital functions.',
+                li1:'Helps preserve critical brain functions',
+                li2:'Real-time monitoring during surgery',
+                li3:'Ideal for tumors near functional brain areas',
+
+                p2:'In today fast-paced world, respiratory health remains a critical aspect of overall well-being. Factors such as pollution, lifestyle choices, and genetic predispositions contribute to the rising incidence of respiratory issues, including asthma.'
+            },
+            {
+                heading:'Aneurysm Surgery',
+                p1:'Used to repair or remove weakened blood vessels in the brain before they rupture. Our team uses microsurgical techniques and advanced imaging to ensure safe and effective aneurysm treatment.',
+                li1:'Prevents rupture and brain hemorrhage',
+                li2:'Microsurgical precision with imaging guidance',
+                li3:'Effective for complex brain aneurysms',
+
+                p2:'In emergency situations, time is of the essence. Knowing the essential techniques for effective resuscitation can mean the difference between life and death. Whether you are a healthcare professional, first responder, or simply a concerned bystander, understanding these techniques is crucial.',
+            }
+         ],
+      title3:'Neurological Diseases or Conditions Treated at Medicover',
+      para3:'Our neurology department provides effective care for all types of brain, spine and nerve disorders. From emergencies to chronic neurological conditions, we use advanced diagnostics, expert treatments and offer a supportive environment to help patients achieve the best possible outcomes.',
+     box2: [
+        {   no:1,
+            h1:'Stroke & Transient Ischemic Attack (TIA)',
+            i:'Immediate diagnosis and treatment to restore blood flow, minimise brain damage and support recovery through specialised stroke rehabilitation programs.'
+        },
+        {   no:2,
+            h1:'Epilepsy & Seizure Disorders',
+            i:'Advanced medications, monitoring and surgical options to control seizures and improve daily living for patients with drug-resistant epilepsy.'
+        },
+        {   no:3,
+            h1:'Parkinsons Disease & Movement Disorders',
+            i:'Personalised medication plans, deep brain stimulation and rehabilitation to manage symptoms and enhance mobility.'
+        },
+        {   no:4,
+            h1:'Alzheimer s Disease & Dementia',
+            i:'Comprehensive care focused on slowing disease progression, improving quality of life and supporting families through education and counselling.'
+        },
+        {
+            no:5,
+            h1:'Multiple Sclerosis & Autoimmune Neurological Disorders',
+            i:'Cutting-edge immunotherapies and supportive treatments to reduce relapses and manage long-term neurological health.'
+        }
+      ],
+      title4:'Facilities and Technology for Neurology',
+      para4:'At Medicover Hospital, we use advanced neurodiagnostic tools and surgical technology to deliver precise, safe and effective treatment for brain, spine and nerve conditions. Our procedures are specialised to ensure early detection, accurate diagnosis and deliver successful treatment results to our patients.',
+      box3:[
+        {
+            roll:1,
+            lab:'3T MRI with Functional MRI (fMRI)',
+            a:'Offers highly detailed brain and spine imaging along with functional brain mapping to identify critical areas controlling speech, movement and vision. This helps surgeons plan safer and more effective neurosurgical procedures.'
+        },
+        {
+            roll:2,
+            lab:'High-Resolution CT Scanners',
+            a:'Delivers rapid, high-quality brain and spine scans to detect strokes, tumours or injuries within minutes. Immediate results enable quick decision-making in neurological emergencies.'
+        },
+        {
+            roll:3,
+            lab:'Electroencephalography (EEG) Monitoring',
+            a:'Continuously records brain activity to diagnose epilepsy, seizure disorders and abnormal brain function. Long-term monitoring helps identify seizure patterns for more effective treatment planning.'
+        },
+        {
+            roll:4,
+            lab:'Electromyography (EMG) & Nerve Conduction Studies (NCS)',
+            a:'Measures muscle response and nerve signal speed to detect neuropathies, nerve injuries and muscle disorders. This helps in pinpointing the exact location and extent of nerve damage.'
+        }
+      ],
+
+      title5:'Benefits of Advanced Technology for Neurology Treatments',
+      para5:'',
+      list1:'Early and accurate detection of neurological disorders with advanced brain and nerve imaging.',
+      list2:'Personalised treatment plans for effective management of stroke, epilepsy and other conditions.',
+      list3:'Minimally invasive neurosurgical procedures ensure faster recovery and reduced risks.',
+      list4:'Higher success rates in complex brain and spine surgeries with cutting-edge technology.',
+      box4:[
+        {
+             icon:'fa-solid fa-shield-heart',
+      title6:'Safety First',
+      para6:'We follow strict clinical protocols and use advanced technology to ensure safe and accurate neurological treatments.'
+      },
+      {
+         icon:' fa-solid fa-user-shield',
+        title6:'Compassionate Care',
+        para6:'Our neurologists and care teams provide personalised support, addressing both medical needs and patient comfort.'
+      },
+      {
+         icon:'fa-regular fa-circle-check',
+        title6:'Timely Treatment',
+        para6:'We prioritise early diagnosis and prompt interventions to prevent complications and improve recovery outcomes.'
+      }
+      ] 
+    },
+
+
+
+
+
+    {
+       id:8,
+        category:'Gastroenterology',
+        title1:'Top Gastroenterology',
+        para1:'Medicover Hospital is known as one of the top gastroenterology hospital in India, offering advanced treatments for disorders of the stomach, liver, pancreas, intestines and entire digestive system. We provide accurate diagnoses, effective therapies and improved quality of life for our patients with a team of experienced gastroenterologists, advanced diagnostic facilities and patient-friendly care.',
+         surgeries:'3.6K+',
+         title2:'Advanced Gastroenterology Treatments and Procedures',
+         para2:'At Medicover, our gastroenterology department offers advanced diagnostic and therapeutic procedures designed to treat digestive and liver disorders with precision, safety and faster recovery.',
+         box1:[
+            {
+                heading:'Endoscopy & Colonoscopy',
+                p1:'Minimally invasive procedures that use high-definition cameras to examine the digestive tract, detect ulcers, bleeding or polyps and remove abnormal growths safely.',
+                 li1:'Early detection of digestive tract disorders',
+                 li2:'Minimally invasive with quick recovery',
+                 li3:'Can be both diagnostic and therapeutic',
+
+                p2:'Spine Surgery Treatment provides pulmonologists and critical care specialists who treat ventilator-associated pneumonia. Treatments include antibiotics, respiratory therapy, and monitoring to manage symptoms and prevent complications.' 
+            },
+            {
+                heading:'ERCP',
+                p1:'Endoscopic Retrograde Cholangiopancreatography is a specialised endoscopic procedure used to diagnose and treat blockages, gallstones and narrowing in the bile or pancreatic ducts with high accuracy.',
+                li1:'Combines endoscopy with X-ray imaging',
+                li2:'Effective for gallstones and strictures',
+                li3:'Minimally invasive alternative to surgery',
+
+                p2:'In today fast-paced world, respiratory health remains a critical aspect of overall well-being. Factors such as pollution, lifestyle choices, and genetic predispositions contribute to the rising incidence of respiratory issues, including asthma.'
+            },
+            {
+                heading:'Liver Biopsy & FibroScan',
+                p1:'Liver biopsies help in diagnosing serious liver conditions, while FibroScan provides a painless, non-invasive assessment of fibrosis, cirrhosis or fatty liver disease.',
+                li1:'Essential for accurate liver disease diagnosis',
+                li2:'FibroScan is quick and non-invasive',
+                li3:'Helps guide personalised treatment plans',
+
+                p2:'In emergency situations, time is of the essence. Knowing the essential techniques for effective resuscitation can mean the difference between life and death. Whether you are a healthcare professional, first responder, or simply a concerned bystander, understanding these techniques is crucial.',
+            }
+         ],
+      title3:'Gastroenterological Conditions We Treat at Medicover',
+      para3:'Our gastroenterology department offers expert care for a wide range of digestive, liver and pancreatic conditions. We offer personalised treatment to ensure safe and successful outcomes for our patients with the help of expert gastroenterologists and advanced tools and technologies.',
+     box2: [
+        {   no:1,
+            h1:'Acid Reflux (GERD)',
+            i:'A condition where stomach acid frequently flows back into the esophagus, which causes heartburn and discomfort. We provide medical and lifestyle-based treatments to manage it effectively.'
+        },
+        {   no:2,
+            h1:'Peptic Ulcers',
+            i:'Painful sores that develop on the stomach or intestinal lining. Our specialists use endoscopy and targeted therapies to promote healing and prevent recurrence.'
+        },
+        {   no:3,
+            h1:'Hard deposits that form in the gallbladder and may cause severe abdominal pain or jaundice. We offer minimally invasive surgeries for safe and lasting relief.'
+        },
+        {   no:4,
+            h1:'Irritable Bowel Syndrome (IBS)',
+            i:'A common digestive disorder causing abdominal cramps, bloating and irregular bowel habits. We provide diet-based therapies, medicines and stress management support.'
+        },
+        {
+            no:5,
+            h1:'Inflammatory Bowel Disease',
+            i:'Chronic inflammation of the digestive tract can cause pain, diarrhea and fatigue. Our multidisciplinary approach includes medication, nutrition and advanced surgery if needed.'
+        }
+      ],
+      title4:'Advanced Technology We Use for Gastroenterology',
+      para4:'At Medicover, we utilise advanced technology and modern facilities to ensure accurate diagnoses, safe treatments and faster recovery for patients with digestive and liver conditions.',
+      box3:[
+        {
+            roll:1,
+            lab:'High-Resolution Endoscopy Systems',
+            a:'Equipped with advanced imaging, our endoscopy units can detect even the smallest ulcers, polyps and early-stage cancers, ensuring timely treatment.'
+        },
+        {
+            roll:2,
+            lab:'Endoscopic Ultrasound (EUS)',
+            a:'Combines ultrasound with endoscopy to provide detailed images of the digestive tract, helping detect tumors, cysts and pancreatic or bile duct conditions.'
+        },
+        {
+            roll:3,
+            lab:'Capsule Endoscopy',
+            a:'A painless, non-invasive diagnostic tool where patients swallow a capsule-sized camera that captures thousands of images inside the small intestine.'
+        },
+        {
+            roll:4,
+            lab:'Advanced Laparoscopy Suites',
+            a:'State-of-the-art operating rooms designed for minimally invasive gastrointestinal surgeries, ensuring smaller incisions, less pain and quicker recovery times.'
+        }
+      ],
+
+      title5:'Benefits of Advanced Technology for Gastroenterology Treatments',
+      para5:'',
+      list1:'Early and accurate detection of digestive disorders with advanced endoscopy and imaging.',
+      list2:'Personalised treatment plans for effective management of gastrointestinal conditions.',
+      list3:'Non-invasive procedures ensure quicker recovery and minimal discomfort.',
+      list4:'Higher success rates in complex treatments like liver, pancreas and GI surgeries.',
+      box4:[
+        {
+             icon:'fa-solid fa-shield-heart',
+      title6:'Safety First',
+      para6:'We follow strict infection-control measures, advanced surgical protocols and international standards of care to ensure patient safety during every procedure.'
+      },
+      {
+         icon:' fa-solid fa-user-shield',
+        title6:'Compassionate Care',
+        para6:'Our gastroenterology doctors, nurses and support staff provide emotional support along with medical treatment to help patients and families feel supported throughout their journey.'
+      },
+      {
+         icon:'fa-regular fa-circle-check',
+        title6:'Timely Treatment',
+        para6:'With advanced diagnostic tools and same-day endoscopy or imaging services, we ensure early detection and quick intervention to prevent complications.'
+      }
+      ] 
+    },
+
+
+
+
+
+
+    {
+        id:9,
+        category:'Surgery',
+        title1:'Top Surgery',
+        para1:'At Medicover Hospital, we offer advanced general surgery services in India, providing precision, safety and faster recovery. Whether you are looking for general surgery near you or need access to a trusted general surgery hospital, our dedicated team provides world-class surgical care across multiple locations in India.',
+         surgeries:'1.6K+',
+         title2:'Types of General Surgery Procedures We Offer',
+         para2:'We offer a wide range of general surgery procedures using modern techniques to treat both common and complex conditions. Key procedures include:',
+         box1:[
+            {
+                heading:'Laparoscopic Surgery',
+                p1:'We specialize in keyhole surgeries for abdominal and soft tissue problems. These procedures involve smaller cuts, less pain, quicker recovery and minimal scarring.',
+                 li1:'Quick recovery',
+                 li2:'Advanced surgical tools',
+                 li3:'Precise outcomes',
+
+                p2:'Spine Surgery Treatment provides pulmonologists and critical care specialists who treat ventilator-associated pneumonia. Treatments include antibiotics, respiratory therapy, and monitoring to manage symptoms and prevent complications.' 
+            },
+            {
+                heading:'Hernia Repair',
+                p1:'We treat inguinal, umbilical, incisional and other types of hernias using safe and advanced surgical methods that ensure long-term relief.',
+                li1:'Reduced recovery time',
+                li2:'Long-term relief',
+                li3:'Minimal post-op discomfort',
+
+                p2:'In today fast-paced world, respiratory health remains a critical aspect of overall well-being. Factors such as pollution, lifestyle choices, and genetic predispositions contribute to the rising incidence of respiratory issues, including asthma.'
+            },
+            {
+                heading:'Gallbladder Surgery (Cholecystectomy)',
+                p1:'Our surgeons perform laparoscopic and open gallbladder surgeries to remove gallstones or diseased gallbladders safely.',
+                li1:'Minimally invasive options',
+                li2:'Personalised post-surgery care',
+                li3:'Faster recovery',
+
+                p2:'In emergency situations, time is of the essence. Knowing the essential techniques for effective resuscitation can mean the difference between life and death. Whether you are a healthcare professional, first responder, or simply a concerned bystander, understanding these techniques is crucial.',
+            }
+         ],
+      title3:'Conditions We Treated Under General Surgery',
+      para3:'Our general surgeons treat a broad spectrum of conditions affecting the abdomen, soft tissues, endocrine glands and digestive system. Common conditions include:',
+     box2: [
+        {   no:1,
+            h1:'Hernias and Abdominal Wall Disorders',
+            i:'Our surgeons treat all types of hernias, including inguinal, umbilical and incisional, using safe surgical methods for lasting relief and reduced recurrence.'
+        },
+        {   no:2,
+            h1:'Gallstones and Gallbladder Problems',
+            i:'We provide advanced laparoscopic and open surgery to treat gallstones and gallbladder disorders, providing fast recovery and minimal discomfort.'
+        },
+        {   no:3,
+            h1:'Appendicitis',
+            i:'Quick and safe appendectomy procedures are performed for inflamed or infected appendices, preventing severe complications and promoting faster healing.'
+        },
+        {   no:4,
+            h1:'Gastrointestinal Bleeding and Digestive Issues',
+            i:'Our team diagnoses and treats gastrointestinal bleeding and digestive system disorders with modern surgical and minimally invasive methods'
+        },
+        {
+            no:5,
+            h1:'Piles, Fissures & Fistulas',
+            i:'We offer advanced surgical treatments for piles, fissures and fistulas to relieve pain, bleeding, and discomfort, restoring comfort and normal function.'
+        }
+      ],
+      title4:'Advanced Diagnostics & Surgical Techniques',
+      para4:'We use modern diagnostic tools and advanced surgical methods to examine health problems early and treat them safely. This helps patients recover faster with better results.',
+      box3:[
+        {
+            roll:1,
+            lab:'Diagnostic & Imaging Services',
+            a:'Our hospitals are equipped with MRI, CT scan, ultrasound, X-rays and lab tests that help doctors detect problems early and plan the most effective treatment.'
+        },
+        {
+            roll:2,
+            lab:'Modern Surgical Techniques',
+            a:'Our surgeons use modern methods like laparoscopic, robotic and laser surgeries. These techniques reduce pain, shorten hospital stays and help patients heal faster.'
+        },
+        {
+            roll:3,
+            lab:'Hybrid Operation Theatres',
+            a:'Our operation theatres have real-time imaging and advanced tools in one place. This makes surgeries safer, quicker and more accurate for better patient care.'
+        },
+        {
+            roll:4,
+            lab:'Day-Care Surgeries',
+            a:'Some surgeries like hernia repair, gallbladder removal or minor bone and women’s health procedures are done in a single day, so patients can go home the same day.'
+        }
+      ],
+
+      title5:'Benefits of Advanced Technology for General Surgery',
+      para5:'',
+      list1:'Precise and accurate diagnosis of surgical conditions with advanced imaging and screening tools.',
+      list2:'Personalised surgical care plans for better treatment outcomes.',
+      list3:'Minimally invasive laparoscopic and robotic surgeries ensure faster recovery and less pain.',
+      list4:'Higher success rates in complex surgical procedures with modern technology.',
+      box4:[
+        {
+             icon:'fa-solid fa-shield-heart',
+      title6:'Safety First',
+      para6:'We maintain the highest surgical safety standards with advanced infection control and modern operating theatres to ensure safe and effective outcomes.'
+      },
+      {
+         icon:' fa-solid fa-user-shield',
+        title6:'Compassionate Care',
+        para6:'Our general surgeons, anaesthetists and nursing teams provide personalised support, guiding patients with care and empathy throughout their surgical journey.'
+      },
+      {
+         icon:'fa-regular fa-circle-check',
+        title6:'Timely Treatment',
+        para6:'From accurate diagnosis to surgical intervention, we ensure minimal delays in care, enabling faster recovery and reduced complications.'
+      }
+      ] 
+    },
+
+
+
+
+
+    {
+      id:10,
+        category:'Gynecology',
+        title1:'Top Gynecology',
+        para1:'At Medicover, we provide advanced gynecology treatment in India for women of all ages. With experienced doctors, modern technology and compassionate support, we handle routine and complex gynecology issues like high-risk pregnancies, menstrual disorders, menopause issues, female infertility, etc, making us the top gynecology hospital in India.',
+         surgeries:'4.6K+',
+         title2:'Advanced Gynecology and Obstetric Procedures',
+         para2:'We offer advanced gynecology and obstetric procedures like C-section, laparoscopy, hysterectomy and fibroid removal with expert care and modern technology',
+         box1:[
+            {
+                heading:'C-Section Delivery',
+                p1:'Medicover provides safe Cesarean deliveries for both planned and emergency cases. Our experienced gynecologists and support team prioritise the health of mother and baby, using advanced surgical techniques and postnatal care for a smooth recovery.',
+                 li1:'Planned delivery',
+                 li2:'Emergency care',
+                 li3:'Mother & baby safety',
+
+                p2:'Spine Surgery Treatment provides pulmonologists and critical care specialists who treat ventilator-associated pneumonia. Treatments include antibiotics, respiratory therapy, and monitoring to manage symptoms and prevent complications.' 
+            },
+            {
+                heading:'Laparoscopic Gynecological Surgery',
+                p1:'We offer minimally invasive laparoscopic gynecological procedures to treat fibroids, ovarian cysts and other conditions. This approach reduces pain, shortens hospital stays, minimises scarring and allows faster recovery while ensuring effective treatment.',
+                li1:'Minimally invasive with low pain',
+                li2:'Faster recovery and healing',
+                li3:'Reduced scarring',
+
+                p2:'In today fast-paced world, respiratory health remains a critical aspect of overall well-being. Factors such as pollution, lifestyle choices, and genetic predispositions contribute to the rising incidence of respiratory issues, including asthma.'
+            },
+            {
+                heading:'Hysterectomy',
+                p1:'Medicover provides safe hysterectomy procedures to remove the uterus for conditions like fibroids, cancer or heavy bleeding. Our specialists ensure comfort, personalised surgical care and proper post-operative recovery for women of all age groups.',
+                li1:'Safe surgery',
+                li2:'Effective treatment',
+                li3:'Post-surgery care',
+
+                p2:'In emergency situations, time is of the essence. Knowing the essential techniques for effective resuscitation can mean the difference between life and death. Whether you are a healthcare professional, first responder, or simply a concerned bystander, understanding these techniques is crucial.',
+            }
+         ],
+      title3:'Women’s Health Conditions We Treat at Medicover',
+      para3:'We treat a wide range of women’s health conditions and gynaecological conditions with the help of a team of highly experienced gynaecologists, who are specialised in treating complex cases with precision and offer a successful outcome.',
+     box2: [
+        {   no:1,
+            h1:'Menstrual Disorders',
+            i:'We help manage irregular, painful or heavy periods with medicines, advice and care to make your menstrual cycles healthier and more comfortable.'
+        },
+        {   no:2,
+            h1:'PCOS (Polycystic Ovary Syndrome)',
+            i:'We treat PCOS with hormonal care, lifestyle tips, and medicines to manage symptoms and support overall reproductive health.'
+        },
+        {   no:3,
+            h1:'Fibroids and Ovarian Cysts',
+            i:'We provide treatment for fibroids and ovarian cysts to reduce pain, prevent complications, and support fertility.'
+        },
+        {   no:4,
+            h1:'Endometriosis',
+            i:'We provide care for endometriosis through medication or surgery to reduce pain and protect reproductive health.'
+        },
+        {
+            no:5,
+            h1:'Pelvic Inflammatory Disease (PID)',
+            i:'We diagnose and treat PID with medicines and follow-ups to prevent long-term complications and maintain reproductive wellness.'
+        }
+      ],
+      title4:'Technology We Use for Gynecology and Obstetrics Diagnosis',
+      para4:'We use the latest tools and diagnostic technologies to provide safe, accurate and efficient treatment for all possible gynaecological conditions like pregnancy complications, menstrual disorders, menopause issues, female infertility, postpartum etc.',
+      box3:[
+        {
+            roll:1,
+            lab:'3D & 4D Ultrasound',
+            a:'Advanced imaging to monitor early pregnancy, check fetal growth, detect anomalies and assist in gynecologic evaluations for better care and safety.'
+        },
+        {
+            roll:2,
+            lab:'Colposcopy',
+            a:'Look closely at the cervix and vagina to find problems early and guide proper treatment.'
+        },
+        {
+            roll:3,
+            lab:'Laparoscopic Units',
+            a:'Perform small-incision surgeries for gynecological problems with less pain and faster recovery.'
+        },
+        {
+            roll:4,
+            lab:'Hysteroscopic Systems',
+            a:'Diagnose and treat uterus issues like fibroids or polyps with minimal surgery and quicker healing.'
+        }
+      ],
+
+      title5:'Benefits of Choosing Medicover for Gynecology',
+      para5:'',
+      list1:'Specific and confidential care for every woman',
+      list2:'Minimally invasive treatments for faster recovery',
+      list3:'Full support during pregnancy and postpartum',
+      list4:'Integrated approach with obstetricians and gynecologists',
+      box4:[
+        {
+             icon:'fa-solid fa-shield-heart',
+      title6:'Safety First',
+      para6:'Respect & Privacy in all consultations and treatments'
+      },
+      {
+         icon:' fa-solid fa-user-shield',
+        title6:'Compassionate Care',
+        para6:'Women-Centered Care in a safe, welcoming environment'
+      },
+      {
+         icon:'fa-regular fa-circle-check',
+        title6:'Timely Treatment',
+        para6:'Clear Communication and complete transparency.'
+      }
+      ] 
+
+    },
+
+
+
+
+
+    {
+       id:11,
+        category:'Andrology',
+        title1:'Top Andrology',
+        para1:'Andrology deals with male reproductive and sexual health, including conditions like male infertility, hormonal disorders, and erectile dysfunction. At Medicover Hospitals, we provide specialized andrology care using advanced diagnostics, experienced andrologists, and evidence-based treatments, making us one of the best andrology hospitals in India for accurate diagnosis and effective outcomes. Our focus is on delivering reliable, patient-centric care that supports timely treatment decisions and long-term male health.',
+         surgeries:'500+',
+         title2:'Advanced Andrology Procedures',
+         para2:'At Medicover Hospitals, we provide advanced andrology care using modern diagnostics and expert medical expertise to diagnose, treat, and manage male reproductive and sexual health conditions with precision and compassion',
+         box1:[
+            {
+                heading:'Fertility Treatment Options',
+                p1:'Medicover Hospitals offers comprehensive fertility care for men, focusing on accurate diagnosis and personalized treatment. Our andrology specialists manage male infertility and related conditions using advanced diagnostics and evidence-based care.',
+                 li1:'Advanced diagnostic tests for male infertility',
+                 li2:'Medical and surgical fertility treatments',
+                 li3:'Hormonal evaluation and targeted therapies',
+
+                p2:'Spine Surgery Treatment provides pulmonologists and critical care specialists who treat ventilator-associated pneumonia. Treatments include antibiotics, respiratory therapy, and monitoring to manage symptoms and prevent complications.' 
+            },
+            {
+                heading:'Varicocele Disorders',
+                p1:'Varicocele is a condition where enlarged veins in the scrotum affect sperm quality and male fertility. At Medicover Hospitals, our andrology specialists diagnose and manage varicocele using accurate evaluation and appropriate treatment.',
+                li1:'Accurate diagnosis using physical examination and ultrasound',
+                li2:'Medical evaluation of fertility impact',
+                li3:'Microsurgical varicocelectomy when indicated',
+
+                p2:'In today fast-paced world, respiratory health remains a critical aspect of overall well-being. Factors such as pollution, lifestyle choices, and genetic predispositions contribute to the rising incidence of respiratory issues, including asthma.'
+            },
+            {
+                heading:'Low Sperm Count',
+                p1:'Low sperm count is a common cause of male infertility that can affect the chances of natural conception. At Medicover Hospitals, our andrology specialists evaluate the underlying causes of low sperm count and provide appropriate medical or surgical treatment to improve sperm health and fertility outcomes.',
+                li1:'Semen analysis test and fertility evaluation',
+                li2:'Hormonal and clinical assessment',
+                li3:'Medical and advanced treatment options',
+
+                p2:'In emergency situations, time is of the essence. Knowing the essential techniques for effective resuscitation can mean the difference between life and death. Whether you are a healthcare professional, first responder, or simply a concerned bystander, understanding these techniques is crucial.',
+            }
+         ],
+      title3:'Conditions We Treat for Andrology Disorders',
+      para3:'At Medicover, our urology department offers expert diagnosis and treatment for a wide range of urinary tract and reproductive system conditions. With advanced technology and highly skilled urologists, we ensure precise care, minimally invasive procedures and improved outcomes for both men and women.',
+     box2: [
+        {   no:1,
+            h1:'Male Infertility Care',
+            i:'We diagnose and treat male infertility caused by lifestyle, medical, or hormonal factors. Our team focuses on accurate evaluation and effective treatment to improve fertility outcomes.'
+        },
+        {   no:2,
+            h1:'Hormonal Disorders in Men',
+            i:'We manage male hormonal imbalances that affect fertility, sexual health, and overall well-being through detailed testing and targeted treatment.'
+        },
+        {   no:3,
+            h1:'Erectile & Ejaculatory Disorders',
+            i:'Specialists treat erectile dysfunction and ejaculation-related problems using medical therapy and personalized care to restore sexual health.'
+        },
+        {   no:4,
+            h1:'Testicular & Scrotal Conditions',
+            i:'We treat testicular pain, swelling, infections, and other scrotal conditions with timely diagnosis and appropriate medical or surgical care.'
+        },
+        {
+            no:5,
+            h1:'Andrology Diagnostic Services',
+            i:'We provide advanced diagnostic tests including semen analysis and hormonal evaluation to support accurate diagnosis and treatment planning.'
+        }
+      ],
+      title4:'Advanced Diagnostic Facilities for Andrology',
+      para4:'At Medicover Hospitals, we use advanced diagnostic tools to accurately evaluate male reproductive and sexual health conditions. These tests help our andrology specialists identify the cause of concerns such as infertility or hormonal imbalance and plan the most appropriate treatment.',
+      box3:[
+        {
+            roll:1,
+            lab:'Semen Analysis',
+            a:'We analyze sperm count, movement, and shape to understand male fertility and identify possible causes of infertility.'
+        },
+        {
+            roll:2,
+            lab:'Hormone Blood Tests',
+            a:'We check testosterone and other hormone levels to detect imbalances that may affect fertility, sexual health, and overall well-being.'
+        },
+        {
+            roll:3,
+            lab:'Ultrasound Scans',
+            a:'We use ultrasound imaging to examine the testicles, scrotum swelling, and surrounding structures to identify conditions like varicocele or blockages.'
+        },
+        {
+            roll:4,
+            lab:'Genetic Testing',
+            a:'We perform genetic tests when needed to identify inherited conditions that may affect sperm production or fertility.'
+        }
+      ],
+
+      title5:'Benefits of Advanced Technology for Andrology',
+      para5:'',
+      list1:'Faster and accurate diagnosis of male infertility and reproductive health issues, helping patients understand the cause of their condition without delays.',
+      list2:'Personalized treatment planning based on precise test results, ensuring each patient receives care tailored to their fertility and sexual health needs.',
+      list3:'Minimally invasive procedures that reduce pain, limit complications, and allow quicker return to normal activities.',
+      list4:'Higher chances of treatment success in complex fertility conditions through advanced medical and microsurgical techniques.',
+      box4:[
+        {
+             icon:'fa-solid fa-shield-heart',
+      title6:'Safety First',
+      para6:'Every patient receives care under strict clinical safety standards, with accurate diagnostics, evidence-based treatments, and careful monitoring to ensure safe and effective andrology care at every stage.'
+      },
+      {
+         icon:' fa-solid fa-user-shield',
+        title6:'Compassionate Care',
+        para6:'We understand that male reproductive and sexual health concerns can be sensitive. Our team provides respectful, confidential, and supportive care to help patients feel comfortable, informed, and confident throughout their treatment.'
+      },
+      {
+         icon:'fa-regular fa-circle-check',
+        title6:'Timely Treatment',
+        para6:'With access to advanced diagnostic tools and modern treatment methods, we focus on early identification of conditions and prompt, precise intervention to support better outcomes and faster recovery..'
+      }
+      ]  
+    },
+
+
+
+
+    {
+       id:12,
+        category:'Cosmetic',
+        title1:'Best Cosmetic Surgery',
+        para1:'Cosmetic surgery is a specialised field focused on enhancing appearance, restoring balance, and improving confidence through advanced, safe, and minimally invasive procedures. At Medicover Hospitals, our expert cosmetic and plastic surgeons combine precision, artistry, and cutting-edge technology to deliver natural-looking, long-lasting aesthetic results.As one of the best cosmetic surgery hospitals in India, we provide a wide range of face, body, and skin enhancement procedures, each designed to align with your goals, improve symmetry, and elevate your overall appearance while maintaining complete safety and comfort',
+         surgeries:'500+',
+         title2:'Advanced Cosmetic Surgery Treatments and Procedures',
+         para2:'Being one of the leading hospitals for cosmetic surgery in India, Medicover Hospitals uses we use modern aesthetic technology, 3D imaging systems, and minimally invasive surgical techniques to redesign, reshape, and refine your appearance. Our cosmetic specialists ensure that every procedure is personalised to your facial structure, body proportions, skin type, and goals provide a full range of cosmetic surgeries.',
+         box1:[
+            {
+                heading:'Rhinoplasty (Nose Reshaping)',
+                p1:'A surgical procedure to reshape or resize the nose to create better facial balance and, in some cases, improve breathing function.',
+                 li1:'Improves nose symmetry and profile',
+                 li2:'Corrects structural issues affecting airflow',
+                 li3:'Enhances overall facial harmony',
+
+                p2:'Spine Surgery Treatment provides pulmonologists and critical care specialists who treat ventilator-associated pneumonia. Treatments include antibiotics, respiratory therapy, and monitoring to manage symptoms and prevent complications.' 
+            },
+            {
+                heading:'Liposuction & Body Contouring',
+                p1:'Removal of stubborn fat pockets that do not respond to diet or exercise to sculpt a more defined physique.',
+                li1:'Precise sculpting of abdomen, thighs, arms, and hips',
+                li2:'Improved body proportions',
+                li3:'Permanent removal of fat cells in treated areas',
+
+                p2:'In today fast-paced world, respiratory health remains a critical aspect of overall well-being. Factors such as pollution, lifestyle choices, and genetic predispositions contribute to the rising incidence of respiratory issues, including asthma.'
+            },
+            {
+                heading:'Breast Augmentation & Lift',
+                p1:'Procedures designed to enhance breast size using implants or fat transfer, or to lift sagging breasts (Mastopexy) for a youthful contour.',
+                li1:'Restores lost breast volume and firmness',
+                li2:'Improves symmetry and cleavage',
+                li3:'Customizable options (implants vs. fat transfer)',
+
+                p2:'In emergency situations, time is of the essence. Knowing the essential techniques for effective resuscitation can mean the difference between life and death. Whether you are a healthcare professional, first responder, or simply a concerned bystander, understanding these techniques is crucial.',
+            }
+         ],
+      title3:'Conditions We Treat in Cosmetic Surgery',
+      para3:'At Medicover, our urology department offers expert diagnosis and treatment for a wide range of urinary tract and reproductive system conditions. With advanced technology and highly skilled urologists, we ensure precise care, minimally invasive procedures and improved outcomes for both men and women.',
+     box2: [
+        {   no:1,
+            h1:'Facial Aging & Wrinkles',
+            i:'We provide comprehensive solutions for signs of aging, including sagging skin, deep creases, and loss of volume. Our surgeons use facelifts, brow lifts, and blepharoplasty (eyelid surgery) to restore a refreshed and youthful appearance.'
+        },
+        {   no:2,
+            h1:'Body Contour Irregularities',
+            i:'For patients struggling with disproportionate fat distribution or loose skin after significant weight loss, we offer body lifts, thigh lifts, and arm lifts. These procedures remove excess tissue and tighten the skin to reveal the body s natural shape.'
+        },
+        {   no:3,
+            h1:'Nasal Deformities',
+            i:'Whether due to genetics or injury, a crooked or asymmetrical nose can affect confidence. We perform corrective rhinoplasty to refine the nasal tip, bridge, and overall shape, ensuring it complements your other facial features.'
+        },
+        {   no:4,
+            h1:'Hair Loss & Balding',
+            i:'We address male and female pattern baldness through advanced hair restoration techniques. Our experts use FUE and FUT transplant methods to restore density and hairline structure naturally'
+        },
+        {
+            no:5,
+            h1:'Post-Pregnancy Changes (Mommy Makeover)',
+            i:'Pregnancy can lead to muscle separation, sagging breasts, and stubborn belly fat. We offer combined procedures (Mommy Makeovers) that address the breasts, abdomen, and waistline simultaneously to restore your pre-pregnancy body.'
+        }
+      ],
+      title4:'Advanced Technology for Cosmetic Diagnosis & Treatment',
+      para4:'Our cosmetic surgery centers across India use advanced, sterile, and high-tech tools to plan and perform surgeries with maximum precision. From 3D simulations to laser-assisted devices, our technology ensures safety and superior aesthetic outcomes.',
+      box3:[
+        {
+            roll:1,
+            lab:'3D Imaging & Simulation',
+            a:'Advanced imaging systems allow doctors and patients to visualize potential results before surgery. This is particularly useful for rhinoplasty and breast augmentation planning.'
+        },
+        {
+            roll:2,
+            lab:'High-Definition Liposuction Technology',
+            a:'We use modern liposuction tools (such as VASER or Laser-assisted) that target fat cells specifically while preserving surrounding tissues, nerves, and blood vessels for faster recovery and smoother results.'
+        },
+        {
+            roll:3,
+            lab:'Endoscopic Surgical Tools',
+            a:'Minimally invasive cameras and instruments allow surgeons to perform brow lifts and facelifts through tiny incisions, resulting in less scarring and quicker healing.'
+        },
+        {
+            roll:4,
+            lab:'Genetic TestinLaser Skin Resurfacing Systemsg',
+            a:'State-of-the-art lasers for scar removal, hair stimulation, and skin tightening. These tools allow for precise control over the depth of treatment, protecting healthy skin while treating imperfections.'
+        }
+      ],
+
+      title5:'Excellence in Cosmetic Surgery Care',
+      para5:'At Medicover, we focus on providing the best aesthetic care with a patient-first approach. We combine expert surgeons, modern technology, and a private environment to ensure every patient feels confident and comfortable.',
+      list1:'Internationally Trained Experts: Our plastic surgeons are globally trained and experienced in managing complex aesthetic and reconstructive cases',
+      list2:'Safety & Sterility: All procedures are performed in NABH-accredited facilities with ISO-certified operating theaters to minimize infection risks.',
+      list3:'Privacy & Confidentiality: We understand the personal nature of cosmetic surgery and ensure strict confidentiality regarding your treatment and records.',
+      list4:'Transparent & Affordable Care: We provide clear treatment plans and upfront cost information to help you make informed decisions.',
+      box4:[
+        {
+             icon:'fa-solid fa-shield-heart',
+      title6:'Safety First',
+      para6:'Strict adherence to international plastic surgery protocols ensures safe procedures and minimizes risks during anesthesia and recovery.'
+      },
+      {
+         icon:' fa-solid fa-user-shield',
+        title6:'Natural Results',
+        para6:'Our goal is enhancement, not alteration. We strive for balanced, natural-looking results that preserve your unique identity.'
+      },
+      {
+         icon:'fa-regular fa-circle-check',
+        title6:'Personalised Attention',
+        para6:'From the initial consultation to the final check-up, our team offers emotional support and guidance, ensuring you feel heard and understood.'
+      }
+      ]   
     }
 
     
