@@ -1,0 +1,44 @@
+.container4 {
+    margin-top: 100px;
+  width: 100%;
+  padding: 30px 0;
+}
+
+/* CONTENT ALIGNMENT */
+.content {
+  max-width: 780px;
+  padding-left: 60px;   /* small real spacing like reference */
+}
+
+/* TYPOGRAPHY */
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 12px;
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #111827;
+  margin-top: 24px;
+  margin-bottom: 6px;
+}
+p {
+  font-size: 14.5px;
+  line-height: 1.8;
+  color: #4b5563;
+  margin-bottom: 14px;
+}
+.content p:first-of-type {
+  margin-top: 10px;
+}
+strong {
+  font-weight: 600;
+  color: #111827;
+}
+h2 + p {
+  margin-top: 6px;
+}

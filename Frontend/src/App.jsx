@@ -19,7 +19,12 @@ import Doctor from "./Component/Swaroop/Vidhya/Doctor";
 //  import Hospital from "./Component/Swaroop/Vidhya/Hospital";
 import "./App.css";
 import Location from "./Component/Swaroop/Vidhya/Location";
-// import Hospital from "./Component/Swaroop/Vidhya/Hospital";
+import Filtering from "./Component/Swaroop/Vidhya/Filtering";
+import Hospital from "./Component/Swaroop/Vidhya/Hospital";
+import AboutUs from "./Component/Swaroop/Vidhya/AboutUs";
+import Privacy from "./Component/Swaroop/Vidhya/Privacy";
+import Success from "./Component/Swaroop/Chandan/Success";
+import Blog from "./Component/Swaroop/Vidhya/Blog";
 
 function App() {
   return (
@@ -43,19 +48,23 @@ function App() {
         
 
           <Route path="/Doctor" element={<Doctor />} />
-          {/* <Route path="/Hospital" element={<Hospital />} />  */}
+          <Route path="/Hospital" element={<Hospital />} /> 
       
-       
+       <Route path="/doctors/:specialization" element={<Filtering />} />
          <Route path="/Location" element={<Location />} />
          <Route path="/Center" element={<Center />} />
         <Route path="/Prevent" element={<Prevent />} />
         <Route path="/Diagnostic" element={<Diagnostic />} />
         <Route path="/Offer" element={<Offer />} />
          <Route path="/Healthcare" element={<Healthcare />} />
-        
+        <Route path="/Filtering" element={<Filtering />} />
         <Route path="/Diseases" element={<Diseases />} />
           {/* Specialties Pages */}
          <Route path="/:category" element={<Specialties />} />
+         <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/Privacy" element={<Privacy />} />
+          <Route path="/Success" element={<Success />} />
+           <Route path="/Blog" element={<Blog />} />
       </Routes>
 
       <Footer />

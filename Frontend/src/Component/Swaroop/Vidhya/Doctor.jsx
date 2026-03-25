@@ -1,49 +1,96 @@
-import React from 'react'
-import "./Doctor.css"
+import React, { useEffect, useState } from "react";
+import "./Doctor.css";
+import DoctorData from "./DoctorData";
 const Doctor = () => {
+  const [doctors, setDoctors] = useState(DoctorData);
 
-    document.addEventListener("DOMContentLoaded", function () {
+  const [filtered, setFiltered] = useState(DoctorData);
+  const [search, setSearch] = useState("");
 
-  fetch("Header.html")
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById("header").innerHTML = data;
+  const [selectedSpecs, setSelectedSpecs] = useState([]);
+const [selectedCities, setSelectedCities] = useState([]);
+const [selectedGender, setSelectedGender] = useState("");
+const [specSearch, setSpecSearch] = useState("");
 
-    /* attach dropdown AFTER header loads */
-     const toggle = document.querySelector(".hospital-toggle");
-     const dropdown = document.querySelector(".hospital-dropdown");
-    if (toggle && dropdown) {
-      toggle.addEventListener("click", function (e) {
-         e.stopPropagation();
-         dropdown.classList.toggle("active");
-      });
+//   const [doctors, setDoctors] = useState(DoctorData);
+// const [filtered, setFiltered] = useState(DoctorData);
 
-      document.addEventListener("click", function () {
-        dropdown.classList.remove("active");
-     });
-     }
+const handleSpecChange = (e) => {
+  const value = e.target.value;
 
-   });
+  // Specialization
+  setSelectedSpecs((prev) =>
+    prev.includes(value)
+      ? prev.filter((item) => item !== value)
+      : [...prev, value]
+  );
+};
 
-   fetch("Footer.html")
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById("footer").innerHTML = data;
-  });
+// City
+const handleCityChange = (e) => {
+  const value = e.target.value;
 
- });
+  setSelectedCities((prev) =>
+    prev.includes(value)
+      ? prev.filter((item) => item !== value)
+      : [...prev, value]
+  );
+};
+
+//Gender
+const handleGenderChange = (e) => {
+  setSelectedGender(e.target.value);
+};
+
+  useEffect(() => {
+  let result = doctors;
+
+  // search filter
+ if (search||specSearch) {
+  result = result.filter((doc) =>
+    doc.name.toLowerCase().includes(search.toLowerCase()) ||
+    doc.specialization.toLowerCase().includes(search.toLowerCase()) ||
+    doc.city.toLowerCase().includes(search.toLowerCase()) ||
+    doc.gender.toLowerCase().includes(search.toLowerCase()) ||
+    doc.language.toLowerCase().includes(search.toLowerCase())
+  );
+}
+
+ if (specSearch) {
+    result = result.filter((doc) =>
+      doc.specialization.toLowerCase().includes(specSearch.toLowerCase())
+    );
+  }
+  // specialization filter
+  if (selectedSpecs.length > 0) {
+    result = result.filter((doc) =>
+      selectedSpecs.includes(doc.specialization)
+    );
+  }
+
+  // city filter
+  if (selectedCities.length > 0) {
+    result = result.filter((doc) =>
+      selectedCities.includes(doc.city)
+    );
+  }
+
+  // gender filter
+  if (selectedGender) {
+    result = result.filter((doc) =>
+      doc.gender === selectedGender
+    );
+  }
+
+  setFiltered(result);
+}, [search,specSearch, selectedSpecs, selectedCities, selectedGender, doctors]);
+
   return (
-    <div>
-      <div id="header"></div>
+    <div className="doctors-page">
 
-{/* <!-- BREADCRUMB --> */}
-<div class="breadcrumb" id="breadcrumb">
-  Home / Doctors
-</div>
-<div id="doctorProfile" style={{ display: 'none' }}></div>
-
-{/* <!-- PAGE HEADER --> */}
-<div class="header">
+      {/* HEADER */}
+      <div className="header1">
+       <div className="header1">
 
   <h1>Doctor Specialities | Centers of Excellence</h1>
 
@@ -52,7 +99,8 @@ const Doctor = () => {
   </p>
 
 </div>
-{/* <!-- section title --> */}
+
+   {/* <!-- section title --> */}
 
 <h2 class="doctor-title">Our Specialist Doctors</h2>
 
@@ -65,15 +113,22 @@ const Doctor = () => {
       Search Doctors by <span id="searchWord">Procedures</span>
     </span>
 
-    <input type="text" id="searchInput"/>
-
+    <input
+  type="text"
+  className="search-input"
+  placeholder="Search doctor..."
+  value={search}
+  onChange={(e) => setSearch(e.target.value)}
+/>
     <span class="search-icon">🔍</span>
 
   </div>
 </div>
 
+      </div>
 
-{/* <!-- main layout --> */}
+     
+     {/* <!-- main layout --> */}
 
 <div class="doctor-page">
 <div class="sidebar">
@@ -82,16 +137,22 @@ const Doctor = () => {
 
 <div class="sidebar-search">
 <span class="sidebar-search-icon">🔍</span>
-<input type="text" placeholder="Search Specialty"/>
+ <input
+  type="text"
+  className="search-input"
+  placeholder="Search Specialities.."
+   value={specSearch}
+  onChange={(e) => setSpecSearch(e.target.value)}
+/>
 </div>
 {/* <!-- SIDEBAR --> */}
 
 
-<label><input type="checkbox" class="spec-filter" value="Cardiology"/> Cardiology</label>
-<label><input type="checkbox" class="spec-filter" value="Neurology"/> Neurology</label>
-<label><input type="checkbox" class="spec-filter" value="Orthopedics"/> Orthopedics</label>
-<label><input type="checkbox" class="spec-filter" value="Gynecology"/> Gynecology</label>
-<label><input type="checkbox" class="spec-filter" value="Dermatology"/> Dermatology</label>
+<label><input type="checkbox" className="spec-filter" value="Cardiology" onChange={handleSpecChange} /> Cardiology</label>
+<label><input type="checkbox" className="spec-filter" value="Neurology" onChange={handleSpecChange}/> Neurology</label>
+<label><input type="checkbox" className="spec-filter" value="Orthopedics" onChange={handleSpecChange}/> Orthopedics</label>
+<label><input type="checkbox" className="spec-filter" value="Gynecology" onChange={handleSpecChange}/> Gynecology</label>
+<label><input type="checkbox" className="spec-filter" value="Dermatology" onChange={handleSpecChange}/> Dermatology</label>
 
 
 
@@ -99,25 +160,25 @@ const Doctor = () => {
 <h3>Treatments</h3>
 <h3>Select City</h3>
 
-<label><input type="checkbox" class="city-filter" value="Hyderabad"/> Hyderabad</label>
-<label><input type="checkbox" class="city-filter" value="Warangal"/> Warangal</label>
-<label><input type="checkbox" class="city-filter" value="Karimnagar"/> Karimnagar</label>
-<label><input type="checkbox" class="city-filter" value="Nizamabad"/> Nizamabad</label>
-<label><input type="checkbox" class="city-filter" value="Khammam"/> Khammam</label>
+<label><input type="checkbox"  className="city-filter" value="Hyderabad" onChange={handleCityChange} /> Hyderabad</label>
+<label><input type="checkbox" className="city-filter" value="Warangal" onChange={handleCityChange}/> Warangal</label>
+<label><input type="checkbox" className="city-filter" value="Karimnagar" onChange={handleCityChange}/> Karimnagar</label>
+<label><input type="checkbox" className="city-filter" value="Nizamabad" onChange={handleCityChange}/> Nizamabad</label>
+<label><input type="checkbox" className="city-filter" value="Khammam" onChange={handleCityChange}/> Khammam</label>
 
-<label><input type="checkbox" class="city-filter" value="Visakhapatnam"/> Visakhapatnam</label>
-<label><input type="checkbox" class="city-filter" value="Vijayawada"/> Vijayawada</label>
-<label><input type="checkbox" class="city-filter" value="Guntur"/> Guntur</label>
-<label><input type="checkbox" class="city-filter" value="Nellore"/> Nellore</label>
-<label><input type="checkbox" class="city-filter" value="Tirupati"/> Tirupati</label>
+<label><input type="checkbox" className="city-filter" value="Visakhapatnam" onChange={handleCityChange}/> Visakhapatnam</label>
+<label><input type="checkbox" className="city-filter" value="Vijayawada" onChange={handleCityChange}/> Vijayawada</label>
+<label><input type="checkbox" className="city-filter" value="Guntur" onChange={handleCityChange}/> Guntur</label>
+<label><input type="checkbox" className="city-filter" value="Nellore" onChange={handleCityChange}/> Nellore</label>
+<label><input type="checkbox" className="city-filter" value="Tirupati" onChange={handleCityChange}/> Tirupati</label>
 
 
 <h3>Gender</h3>
 
 
-<label><input type="radio" name="gender" class="gender-filter" value="Male"/> Male</label>
-<label><input type="radio" name="gender" class="gender-filter" value="Female"/> Female</label>
-<input type="radio" name="gender" class="gender-filter" value="" checked={true} readOnly /> All
+<label><input type="radio" name="gender" className="gender-filter" value="Male" onChange={handleGenderChange} /> Male</label>
+<label><input type="radio" name="gender" className="gender-filter" value="Female" onChange={handleGenderChange}/> Female</label>
+<input type="radio" name="gender" className="gender-filter" value="" checked onChange={handleGenderChange}/> All
 
 <h3>Language</h3>
 
@@ -188,22 +249,24 @@ const Doctor = () => {
 
 </div>
 
-{/* <!-- RIGHT SIDE DOCTORS --> */}
-
-<div class="doctor-content">
-    
-
-
-<div id="doctorGrid" class="doctor-grid"></div>
-
-<div id="pagination" class="pagination"></div>
- 
-
-</div>
-
-</div>
-
-<section class="why-section">
+        {/* DOCTORS */}
+        <div className="doctor-content">
+          <div className="doctor-grid">
+            {filtered.map((doc) => (
+              <div key={doc.id} className="doctor-card">
+                <img src={doc.img} alt={doc.name} />
+                <h4>{doc.name}</h4>
+                <p>{doc.specialization}</p>
+                <p>{doc.city}</p>
+                <span className="exp">{doc.exp}</span>
+                <button className="book-btn">Book Appointment</button>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+       </div>
+        <section class="why-section">
 
 <h2>Why Choose Our Specialists?</h2>
 
@@ -387,48 +450,11 @@ Diagnostics & Pathology Tests
 </div>
 
 </section>
-<div id="footer"></div>
+     
 
 
-
-{/* <script src="DoctorsData.js"></script>
-<script src="doctors.js"></script> */}
-
-{/* <script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  fetch("Header.html")
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById("header").innerHTML = data;
-
-    /* attach dropdown AFTER header loads */}
-{/* //     const toggle = document.querySelector(".hospital-toggle");
-//     const dropdown = document.querySelector(".hospital-dropdown");
-
-//     if (toggle && dropdown) {
-//       toggle.addEventListener("click", function (e) {
-//         e.stopPropagation();
-//         dropdown.classList.toggle("active");
-//       });
-
-//       document.addEventListener("click", function () {
-//         dropdown.classList.remove("active");
-//       });
-//     }
-
-//   });
-
-//   fetch("Footer.html")
-//   .then(res => res.text())
-//   .then(data => {
-//     document.getElementById("footer").innerHTML = data;
-//   });
-
-// });
-// </script>  */}
     </div>
-  )
-}
+  );
+};
 
-export default Doctor
+export default Doctor;

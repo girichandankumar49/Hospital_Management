@@ -292,20 +292,18 @@ display:block;
 transform:scale(1.1);
 }
 /* HARD REMOVE SPECIALIZATION STRIP */
-body .specialization-bar,
+/* body .specialization-bar,
 body .specialization-list,
 body .specialization-strip,
 body .specialization-menu,
-body .top-specialization,
-body nav ul li ul,
-body nav ul li:hover ul {
+body .top-specialization {
     display: none !important;
     visibility: hidden !important;
     opacity: 0 !important;
     height: 0 !important;
     overflow: hidden !important;
     pointer-events: none !important;
-}
+} */
 
 @keyframes fadeIn {
   from {

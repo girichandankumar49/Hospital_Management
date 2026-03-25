@@ -1,4 +1,4 @@
-.container{width:90%;margin:auto;}
+.container2{padding:100px;   margin:auto;}
 
 /* DROPDOWN */
 .dropdown{padding:25px 0;}
@@ -41,11 +41,12 @@ select{padding:12px 20px;border-radius:8px;border:1px solid #ccc;}
   100% { background-position: 0% 50%; }
 }
 
-.heroL h1 {
-  background: linear-gradient(90deg, #1b4f91, #2563eb, #1b4f91);
+.heroL h1,p {
+  text-align: center;
+  /* background: linear-gradient(90deg, #1b4f91, #2563eb, #1b4f91); */
   background-size: 200% auto;
   /* -webkit-background-clip: text; */
-  -webkit-text-fill-color: transparent;
+  /* -webkit-text-fill-color: transparent; */
   animation: textFlow 3s linear infinite;
 }
 
@@ -54,9 +55,11 @@ select{padding:12px 20px;border-radius:8px;border:1px solid #ccc;}
     background-position: 200% center;
   }
 }
+
 .address {
   transition: 0.4s;
   border-left: 5px solid #2563eb;
+  text-align: center;
 }
 
 .address:hover {
@@ -66,6 +69,7 @@ select{padding:12px 20px;border-radius:8px;border:1px solid #ccc;}
   position: relative;
   overflow: hidden;
   transition: 0.3s;
+
 }
 
 /* glowing pulse */

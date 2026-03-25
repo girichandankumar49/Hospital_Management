@@ -1,115 +1,39 @@
 .doctors-page {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
+  font-family: Arial;
   background: #f5f7fa;
+  margin-top: 100px;
 }
 
-/* breadcrumb */
-
-.doctors-page .breadcrumb {
-  background: #f1f1f1;
-  padding: 14px 80px;
-  font-size: 14px;
-  color: #555;
-   background: #f1f3f5;
-}
-/* PAGE HEADER */
-
-.doctors-page .header {
+/* HEADER */
+.header1 {
   text-align: center;
-  padding: 60px 20px;
+  padding: 40px;
   background: #eef2f6;
-    
 }
 
-.doctors-page .header h1 {
-  font-size: 36px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #111;
+.doctors-page .header1 {
+    text-align: center;
+    padding: 60px 20px;
+    background: #eef2f6;
+    border-bottom: 1px solid #e0e0e0;
 }
 
-.doctors-page .header p {
-  max-width: 900px;
-  margin: auto;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #444;
+.doctors-page .header1 p {
+    max-width: 950px;
+    margin: auto;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
 }
-/* TITLE */
 
 .doctors-page .doctor-title {
-  text-align: center;
-  font-size: 30px;
-  margin: 40px 0 20px;
-  font-weight: 600;
-  color: #222;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #222;
 }
-
-.doctors-page .doctor-layout{
-display:flex;
-gap:30px;
-padding:40px 80px;
-}
-
-.doctors-page .doctor-left{
-flex:3;
-}
-
-.doctors-page .popular-right{
-flex:1;
-background:white;
-padding:20px;
-border-radius:10px;
-}
-
-.doctors-page .doctor-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
-}
-
-.doctors-page .doctor-card{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
-}
-/* HEADER SECTION */
-
-.doctors-page .header{
-text-align:center;
-padding:60px 20px;
-background:#eef2f6;
-border-bottom: 1px solid #e0e0e0;
-}
-
-.doctors-page .header h1{
-font-size:36px;
-margin-bottom:15px;
-color:#111;
-}
-
-.doctors-page .header p{
-max-width:950px;
-margin:auto;
-font-size:16px;
-line-height:1.7;
-color:#444;
-}
-
-/* TITLE */
-
-.doctors-page .doctor-title{
-text-align:center;
-font-size:30px;
-margin-top:40px;
-margin-bottom:30px;
-font-weight:600;
-color:#222;
-}
-
-/* SEARCH BAR */
 
 .doctors-page .search-wrapper{
 display:flex;
@@ -176,7 +100,23 @@ font-size:18px;
 cursor:pointer;
 }
 
-/* MAIN PAGE LAYOUT */
+.doctors-page .doctor-page{
+max-width:1400px;
+margin:auto;
+display:flex;
+gap:40px;
+padding:40px 20px 60px;
+ background: transparent;
+}
+
+.header h1 {
+  font-size: 32px;
+}
+
+.header p {
+  color: #555;
+}
+
 
 .doctors-page .doctor-page{
 max-width:1400px;
@@ -240,147 +180,86 @@ margin-right:6px;
 .doctors-page .doctor-content{
 flex:1;
 }
-
-/* DOCTOR GRID */
-
-.doctors-page .doctor-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:35px;
+/* SEARCH */
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
 }
 
-/* DOCTOR CARD */
-
-.doctors-page .doctor-card{
-background: #ffffff;
-padding:20px;
-border-radius:14px;
-text-align:center;
-box-shadow:0 6px 18px rgba(0,0,0,0.08);
-transition:0.3s;
-min-height:260px;
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
+.search-input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
 }
 
-.doctors-page .doctor-card:hover{
-transform:translateY(-6px);
+/* LAYOUT */
+.doctor-page {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
 }
 
-/* DOCTOR IMAGE */
-
-.doctors-page .doctor-card img{
-width:120px;
-height:120px;
-border-radius:50%;
-object-fit:cover;
-border:4px solid #f1f1f1;
-margin-bottom:12px;
+/* SIDEBAR */
+.sidebar {
+  width: 200px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-/* DOCTOR INFO */
-
-.doctors-page .doctor-info{
-text-align:center;
+.sidebar h3 {
+  margin-bottom: 10px;
 }
 
-.doctors-page .doctor-info h4{
-margin:5px 0;
-font-size:17px;
-color:#222;
+.sidebar label {
+  display: block;
+  margin: 5px 0;
+  cursor: pointer;
 }
 
-.doctors-page .doctor-info p{
-margin:3px 0;
-font-size:14px;
-color:#555;
+/* GRID */
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
-.doctors-page .location{
-font-size:14px;
-color:#666;
+/* CARD */
+.doctor-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
-/* EXPERIENCE BADGE */
-
-.doctors-page .exp{
-display:inline-block;
-background:#e8f1fb;
-color:#1657a5;
-padding:6px 12px;
-border-radius:20px;
-font-size:12px;
-margin-top:6px;
+.doctor-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
-/* BOOK BUTTON */
-
-.doctors-page .book-btn{
-margin-top:14px;
-width:100%;
-background:#1657a5;
-color:white;
-border:none;
-padding:12px;
-border-radius:8px;
-cursor:pointer;
-font-size:15px;
-font-weight:500;
+.exp {
+  display: block;
+  margin: 10px 0;
+  color: #1657a5;
 }
 
-.doctors-page .book-btn:hover{
-background:#0f3f7a;
+/* BUTTON */
+.book-btn {
+  background: #1657a5;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-/* RESET BUTTON */
-
-.doctors-page .reset-filters{
-width:100%;
-margin-top:20px;
-padding:12px;
-border:1px solid #cfcfcf;
-background:white;
-border-radius:6px;
-cursor:pointer;
-font-size:14px;
+.book-btn:hover {
+  background: #0f3f7a;
 }
-
-.doctors-page .reset-filters:hover{
-background:#f2f2f2;
-}
-
-/* PAGINATION */
-
-.doctors-page .pagination{
-margin-top:45px;
-display:flex;
-justify-content:center;
-gap:10px;
-}
-
-.doctors-page .pagination button{
-width:42px;
-height:42px;
-border:none;
-background:#e5e5e5;
-border-radius:6px;
-cursor:pointer;
-font-size:14px;
-}
-
-.doctors-page .pagination button.active{
-background:#1657a5;
-color:white;
-}
-
-.doctors-page .pagination button:hover{
-background:#1657a5;
-color:white;
-}
-
-/* WHY SECTION */
 
 .doctors-page .why-section{
 text-align:center;

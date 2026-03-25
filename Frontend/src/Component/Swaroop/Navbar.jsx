@@ -51,10 +51,9 @@ function Navbar() {
 
           {activeMenu === "Doctor1" && (
             <ul className="dropdown-menu">
-              <li><Link to="/Prevent" onClick={() => setActiveMenu(null)}>Cardiology</Link></li>
-              <li><Link to="/Diagnostic" onClick={() => setActiveMenu(null)}>Nephrology</Link></li>
-              <li><Link to="/Offer" onClick={() => setActiveMenu(null)}>Neurology</Link></li>
-              <li><Link to="/Healthcare" onClick={() => setActiveMenu(null)}>Gastroenterology</Link></li>
+              <li><Link to="/doctors/Cardiology" onClick={() => setActiveMenu(null)}>Cardiology</Link></li>
+              <li><Link to="/doctors/Neurology" onClick={() => setActiveMenu(null)}>Neurology</Link></li>
+              <li><Link to="/doctors/Gastroenterology" onClick={() => setActiveMenu(null)}>Gastroenterology</Link></li>
             </ul>
           )}
         </li>
@@ -156,12 +155,36 @@ function Navbar() {
               <li><Link to="/Symptoms" onClick={() => setActiveMenu(null)}>Symptoms</Link></li>
               <li><Link to="/Testimonials" onClick={() => setActiveMenu(null)}>Patient Testimonials</Link></li>
               <li><Link to="/Cost" onClick={() => setActiveMenu(null)}>Surgery Cost</Link></li>
+               <li><Link to="/Blog" onClick={() => setActiveMenu(null)}>Blogs</Link></li>
+                <li><Link to="/Portal" onClick={() => setActiveMenu(null)}>Patient Portal</Link></li>
+            </ul>
+          )}
+        </li>
+
+         <li
+          className="dropdown"
+          onMouseEnter={() => setActiveMenu("about")}
+        // onMouseLeave={() => setActiveMenu(null)}
+        >
+          <span className="nav-link dropdown-toggle">
+            About 
+            <span className={`arrow ${activeMenu === "about" ? "open" : ""}`}>
+              ▼
+            </span>
+          </span>
+
+          {activeMenu === "about" && (
+            <ul className="dropdown-menu">
+              <li><Link to="/AboutUs" onClick={() => setActiveMenu(null)}>About Us</Link></li>
+              <li><Link to="/Symptoms" onClick={() => setActiveMenu(null)}>Symptoms</Link></li>
+              <li><Link to="/Success" onClick={() => setActiveMenu(null)}>Sucess Stories</Link></li>
+              <li><Link to="/Privacy" onClick={() => setActiveMenu(null)}>Privacy Policies</Link></li>
                <li><Link to="/Blogs" onClick={() => setActiveMenu(null)}>Blogs</Link></li>
                 <li><Link to="/Portal" onClick={() => setActiveMenu(null)}>Patient Portal</Link></li>
             </ul>
           )}
         </li>
-        <li><Link to="/" className="nav-link">About</Link></li>
+        {/* <li><Link to="/" className="nav-link">About</Link></li> */}
         <li><Link to="/" className="nav-link">Home Care</Link></li>
 
       </ul>
